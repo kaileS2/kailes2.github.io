@@ -1,0 +1,105 @@
+body {
+  background: url("../../assets/imgs/bolha-background.png") no-repeat;
+  background-color: rgb(143, 143, 255);
+  overflow: hidden;
+  user-select: none;
+}
+
+div.box-projetos {
+  background: #ffffff;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  border-radius: 15px;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 40px #000;
+}
+
+p.text-projetos {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  font-style: normal;
+  color: #ffffff;
+  position: relative;
+  top: -25px;
+  left: 15px;
+  text-shadow: 5px 5px 9px #000;
+  transition: all 0.5s;
+}
+
+p.text-projetos:hover {
+  font-size: 30px;
+}
+
+div.box-projetos:hover {
+  width: 105px;
+  height: 105px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px #000;
+}
+
+a.link-projetos {
+  display: inline-block;
+  text-decoration: none;
+}
+
+div.barra-infos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  font-weight: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.5s;
+}
+
+div.barra-infos:hover {
+  padding: 9px;
+}
+
+img.logo-twitter {
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s;
+}
+img.logo-instagram {
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s;
+}
+img.logo-tiktok {
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s;
+}
+
+img.logo-twitter:hover {
+  height: 60px;
+  width: 60px;
+}
+img.logo-instagram:hover {
+  height: 60px;
+  width: 60px;
+}
+img.logo-tiktok:hover {
+  height: 60px;
+  width: 60px;
+}
+
+noscript.alert-noscript {
+  font-size: 20px;
+}
+
+p.text-versao-test {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}

@@ -8,21 +8,21 @@ body {
 
 @media only screen and (max-width: 768px) {
   body {
-      background-size: cover;
+    background-size: cover;
   }
 
   div.box-projetos {
-      width: 80%;
-      height: 150px;
-      border-radius: 10px;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
   }
 
   p.text-projetos {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   div.barra-infos {
-      padding: 10px;
+    padding: 10px;
   }
 }
 

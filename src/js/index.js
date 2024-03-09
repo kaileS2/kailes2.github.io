@@ -1,12 +1,11 @@
-var box_projetos = document.querySelector('div.box-projetos')
-var text_projetos = document.querySelector("p.text-projetos")
+var box_projetos = document.querySelector('div.box-projetos');
+var text_projetos = document.querySelector("p.text-projetos");
+var isExpanded = false;
 
-var isExpanded = false; // Variável de controle para alternar entre os dois estados
-
-function aumentarEDiminuirBoxProjetos() { 
+function aumentarEDiminuirBoxProjetos() {
     if (!isExpanded) {
-        box_projetos.style.width = "500px";
-        box_projetos.style.height = "300px";
+        box_projetos.style.width = "75%";
+        box_projetos.style.height = "150px";
         text_projetos.hidden = true;
         isExpanded = true;
     } else {
@@ -16,5 +15,3 @@ function aumentarEDiminuirBoxProjetos() {
         isExpanded = false;
     }
 };
-
-document.addEventListener("DOMContentLoaded", load, false);

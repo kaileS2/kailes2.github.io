@@ -1,6 +1,7 @@
 var box_projetos = document.querySelector('div.box-projetos');
 var text_projetos = document.querySelector("p.text-projetos");
-var relogio_digital_link = document.querySelector("a.relogio-digital-link")
+var relogio_digital_link = document.querySelector("a.relogio-digital-link");
+var elliot_link = document.querySelector("a.elliot-link")
 var isExpanded = false;
 
 function fade(element) {
@@ -33,21 +34,25 @@ function aumentarEDiminuirBoxProjetos() {
     if (!isExpanded) {
         box_projetos.style.width = "75%";
         box_projetos.style.height = "150px";
-        relogio_digital_link.hidden = false
+        
+        fade(text_projetos);
+        unfade(relogio_digital_link);
+        unfade(elliot_link)
 
-        fade(text_projetos)
-        unfade(relogio_digital_link)
-
+        relogio_digital_link.hidden = false;
+        elliot_link.hidden = false
         text_projetos.hidden = true;
         isExpanded = true;
     } else {
         box_projetos.style.width = "100px";
         box_projetos.style.height = "100px";
-        relogio_digital_link.hidden = true
+        
+        unfade(text_projetos);
+        fade(relogio_digital_link);
+        fade(elliot_link)
 
-        unfade(text_projetos)
-        fade(relogio_digital_link)
-
+        relogio_digital_link.hidden = true;
+        elliot_link.hidden = true
         text_projetos.hidden = false;
         isExpanded = false;
     }

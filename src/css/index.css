@@ -22,7 +22,7 @@ body {
     border-radius: 10px;
   }
 
-  p.text-projetos {
+  span.text-projetos {
     font-family: "Caveat", cursive, sans-serif;
     font-size: 20px;
   }
@@ -45,7 +45,7 @@ div.box-projetos {
   box-shadow: 0px 0px 40px #000;
 }
 
-div.relogio-digital-box {
+div.github-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -59,15 +59,16 @@ div.relogio-digital-box {
   transition: all 0.5s;
 }
 
-p.relogio-digital-text {
+span.github-text {
   font-family: "Caveat", cursive, sans-serif;
   color: #fff;
   position: relative;
+  left: 5px;
   font-size: 25px;
   font-style: normal;
   transition: all 0.5s;
 }
-p.text-projetos {
+span.text-projetos {
   font-family: "Caveat", cursive, sans-serif;
   position: absolute;
   font-size: 25px;
@@ -77,7 +78,7 @@ p.text-projetos {
   transition: all 0.5s;
 }
 
-p.text-projetos:hover {
+span.text-projetos:hover {
   font-size: 30px;
 }
 
@@ -88,17 +89,17 @@ div.box-projetos:hover {
   box-shadow: 0px 0px 30px #000;
 }
 
-div.relogio-digital-box:hover {
+div.github-box:hover {
   width: 80px;
   height: 80px;
   border-radius: 25px;
 }
 
-p.relogio-digital-text:hover {
-  font-size: 35px;
+span.github-text:hover {
+  font-size: 30px;
 }
 
-a.relogio-digital-link {
+a.github-link {
   text-decoration: none;
 }
 
@@ -127,30 +128,16 @@ div.barra-infos:hover {
   padding: 9px;
 }
 
-img.logo-twitter {
-  height: 50px;
-  width: 50px;
-  transition: all 0.5s;
-}
-img.logo-instagram {
-  height: 50px;
-  width: 50px;
-  transition: all 0.5s;
-}
+img.logo-twitter,
+img.logo-instagram,
 img.logo-tiktok {
   height: 50px;
   width: 50px;
   transition: all 0.5s;
 }
 
-img.logo-twitter:hover {
-  height: 60px;
-  width: 60px;
-}
-img.logo-instagram:hover {
-  height: 60px;
-  width: 60px;
-}
+img.logo-twitter:hover,
+img.logo-instagram:hover,
 img.logo-tiktok:hover {
   height: 60px;
   width: 60px;
